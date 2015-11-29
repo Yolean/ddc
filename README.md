@@ -9,8 +9,8 @@
  * Builds either npm install (to sinopa etc) or docker install (to private repo usually)
  * Origins may support automatically organization and repo creation, do `git remote add name url` and `git push name branch` and you're there (typically authenticated access)
  * Issues/tickets are branches with a branch readme (markdown)
- * Header of branch readme has a Status field
- * Typical branch statuses: `wip` (default), `pr`/`mr`
+ * [Frontmatter](http://jekyllrb.com/docs/frontmatter/) of branch readme has a Status field
+ * Typical branch statuses: `wip` (default), `pr`/`mr`, `wontfix`
  * Readme is versioned with commits, can be the only change in a commit (such commits ideally distinguishable by )
  * Merge to master typically does not affect branch status. It's a simple indexing operation to see which branches are merged.
 
