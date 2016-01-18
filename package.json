@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Scripts for DDC concepts",
   "main": "index.js",
+  "bin": {
+    "ddc": "./js/bin/ddc.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Yolean/ddc/issues"
   },
-  "homepage": "https://github.com/Yolean/ddc"
+  "homepage": "https://github.com/Yolean/ddc",
+  "dependencies": {
+    "cli": "^0.11.1",
+    "extend": "^3.0.0",
+    "moment": "^2.11.1",
+    "mout": "^0.11.1"
+  }
 }

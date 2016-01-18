@@ -1,3 +1,15 @@
+# How to use the CLI utility
+
+```
+npm install ddc
+```
+
+```
+./node_modules/bin/ddc suggest
+./node_modules/bin/ddc create
+./node_modules/bin/ddc tag
+```
+
 # Distributed Developer Collaboration
 
  * Push to remote, any remote, a colleague's/team's/organization's. Typically https.
