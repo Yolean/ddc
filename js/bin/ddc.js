@@ -10,6 +10,8 @@ cli.parse({
 
 var exec = {
   suggest: require('../suggest'),
+  create: require('../create'),
+  tag: require('../tag') // a.k.a. postversion
 };
 
 var ddcOptions = defaults;
