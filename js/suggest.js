@@ -18,6 +18,6 @@ module.exports = function(args, options) {
 
   var name = namegen(n1, n2);
 
-  return clock + name;
+  return clock + n1 + n2 + name;
 
 };
