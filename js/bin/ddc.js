@@ -4,15 +4,16 @@ var cli = require('cli');
 var extend = require('extend');
 var defaults = require('../options-default')
 
-cli.parse({
-  optfile: [ 'o', 'Custom options file, needed if not ./.ddc.config.js', 'file' ]
-}, ['create', 'suggest', 'tag']);
-
 var exec = {
   suggest: require('../suggest'),
   create: require('../create'),
-  tag: require('../tag') // a.k.a. postversion
+  tag: require('../tag'), // a.k.a. postversion
+  verbs: require('../verbs')
 };
+
+cli.parse({
+  optfile: [ 'o', 'Custom options file, needed if not ./.ddc.config.js', 'file' ]
+}, Object.keys(exec));
 
 var ddcOptions = defaults;
 if (cli.options.optfile) {
