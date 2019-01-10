@@ -1,3 +1,3 @@
 module.exports = {
-  path: './doc'
+  path: './changelog'
 };
